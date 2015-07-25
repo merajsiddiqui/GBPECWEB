@@ -38,7 +38,7 @@ namespace Shared {
         public function _secure() {
             $user = $this->getUser();
             if (!$user) {
-                header("Location:/public/Admissions/");
+                header("Location:/admissions");
                 exit();
             }
         }
