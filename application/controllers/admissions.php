@@ -16,9 +16,7 @@ class Admissions extends Controller {
         $this->changeLayout();
         $this->seo(array("title" => "GBPEC::Apply Online","keywords" => "admin","description" => "admin", "view" => $this->getLayoutView()));
         $view = $this->getActionView();
-        $dbb = new Query();
-        $db = Registry::get("database");
-        $db->sync($dbb);
+        
         if(RequestMethods::post("action")=="apply"){
             $sname = RequestMethods::post("name");
             $email = RequestMethods::post("email");
