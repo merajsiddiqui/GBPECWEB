@@ -1,0 +1,12 @@
+/* 
+Template Name: Book Of Wisdom
+Template URI: http://www.os-templates.com/
+Description: OS Templates Live Demo Version - Basic demo elements only, all extras removed
+Version: 1.0
+Author: OS-Templates.com
+Author URI: http://www.os-templates.com/
+Licence: 
+Licence URI: http://www.os-templates.com/template-terms
+File: Live Demo Custom JS
+*/
+jQuery(document).ready(function(e){e("img").removeAttr("width height")});$(".alert-msg .close").click(function(){$(this).parent().animate({opacity:"0"},400).slideUp(400);return false});$(".accordion-title").click(function(){$(".accordion-title").removeClass("active");$(".accordion-content").slideUp("normal");if($(this).next().is(":hidden")==true){$(this).addClass("active");$(this).next().slideDown("normal")}});$(".accordion-content").hide();$(".toggle-title").click(function(){$(this).toggleClass("active").next().slideToggle("fast");return false});$(".tab-wrapper").tabs({event:"click"});$(".mediabox").fitVids();$("#slideit").click(function(){$("div#slidepanel").slideDown("slow")});$("#closeit").click(function(){$("div#slidepanel").slideUp("slow")});$("#openpanel a").click(function(){$("#openpanel a").toggle()});jQuery("#scrolltotop").click(function(){jQuery("body,html").animate({scrollTop:0},600)});jQuery(window).scroll(function(){if(jQuery(window).scrollTop()>150){jQuery("#scrolltotop").addClass("visible")}else{jQuery("#scrolltotop").removeClass("visible")}});$('<form id="mobilemenu"><select /></form>').appendTo("#topnav");$("<option />",{selected:"selected",value:"",text:"MENU"}).appendTo("#topnav select");$("#topnav a").each(function(){var e=$(this);if($(e).parents(".sub-menu .sub-menu .sub-menu").length>=1){$("<option />",{value:e.attr("href"),text:"- - - "+e.text()}).appendTo("#topnav select")}else if($(e).parents(".sub-menu .sub-menu").length>=1){$("<option />",{value:e.attr("href"),text:"- - "+e.text()}).appendTo("#topnav select")}else if($(e).parents(".sub-menu").length>=1){$("<option />",{value:e.attr("href"),text:"- "+e.text()}).appendTo("#topnav select")}else{$("<option />",{value:e.attr("href"),text:e.text()}).appendTo("#topnav select")}});$("#topnav select").change(function(){if($(this).find("option:selected").val()!=="#"){window.location=$(this).find("option:selected").val()}})
