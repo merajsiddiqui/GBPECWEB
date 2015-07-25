@@ -1,0 +1,111 @@
+<div class="container">
+<div class="row">
+	
+	<div class="page-header" align="center">
+	<img src="{echo CDN}form/Images/logo_head.png" class="img-responsive" alt="GBPEC LOGO"><h4><marquee>Admission Form For 2015-2016 Session.</marquee></h4>	
+	</div>
+</div>
+	<div class="row">
+		{if isset($success)}
+		<div class="alert alert-success alert-dismissible" role="alert">
+	  		<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	  		<strong>Message : </strong>.
+		</div>
+		{/if}
+		<div class="col-lg-7">
+		<div class="alert alert-success" role="alert">Users are strictly advised to use PC / Laptop for filling the application Form.</div>
+			<div class="panel panel-danger">
+				  <div class="panel-heading">Instruction for Admission</div>
+				  <div class="panel-body">
+				    	<ul>
+						  <li>B. Tech Regular Entry
+						    <ul>
+						      <li>Appear in GGSIPU CET-131 and qualify for counselling</li>
+						      <li>Make the payment as directed by GGSIPU</li>
+						      <li>Choose G. B. Pant Engineering College in counselling at IPU </li>
+						    </ul>
+						  </li>
+						  <hr>
+						  <li >B. Tech Lateral Entry
+						  <ul>
+						      <li>Appear in GGSIPU CET-128 and qualify for counselling</li>
+						      <li>Make the payment as directed by GGSIPU</li>
+						      <li>Choose G. B. Pant Engineering College in counselling at IPU </li>
+						    </ul>
+						   </li>
+						   <hr>
+						  <li>Register here with  details </li>
+						  <li>Verify Your documents at Our office From <b> 1<sup>st</sup> August</b></li>
+						  <li>After verification of document you can attend the class.</li>
+						  <li>By taking Admission in the college you accept the terms and condition.</li>
+						  <li><strong>Keep Your Passport size photo and signature soft copy ready to upload</strong></li>
+						  <li><strong>Photo should be no more than 100KB while signature not more than 40KB</strong></li>
+						</ul>
+
+				  </div>
+			</div>
+
+		</div>
+		<div class="col-lg-5">
+		{script $admsn_open = true}
+		{if isset($admsn_open)}
+			<div class="panel panel-primary">
+			  <div class="panel-heading">Fill a New Application</div>
+			  <div class="panel-body">
+			    
+			  	<form class="form-horizontal">
+
+					  <div class="form-group ">
+					    <label for="exampleInputEmail1" class="col-sm-4 control-label">Candidate Name</label>
+					    <div class="col-sm-8">
+					    <input type="text" class=" form-control" id="exampleInputEmail1" placeholder="Candidate name" name="name"/>
+					    </div>
+					  </div>
+					  <div class="form-group ">
+					    <label for="exampleInputEmail1" class="col-sm-4 control-label">Email address</label>
+					    <div class="col-sm-8">
+					    <input type="email" class=" form-control" id="exampleInputEmail1" placeholder="Email Address" name="email"/>
+					    </div>
+					  </div>
+					  <div class="form-group">
+					    <label class="col-sm-4 control-label" for="exampleInputPassword1">Create Password</label>
+					    <div class="col-sm-8">
+					    	<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" name="password">	
+					    </div>
+					  </div>
+					  <input type="hidden" name="action" value="applly"><sup><b>*</b></sup>This Email will be verified
+					  <button type="submit" class="btn btn-success pull-right" class="pull-right">Fill New Application</button>
+					</form>
+
+			  </div>
+			</div>
+			<div class="panel panel-primary">
+			  <div class="panel-heading">Application Form Status</div>
+			  <div class="panel-body">
+			    
+			  	<form class="form-horizontal">
+					  <div class="form-group">
+					    <label class="col-sm-4 control-label" for="exampleInputPassword1">Application No.</label>
+					    <div class="col-sm-8">
+					    	<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Password" name="password">	
+					    </div>
+					  </div>
+					  <div class="form-group">
+					    <label class="col-sm-4 control-label" for="exampleInputPassword1">Password</label>
+					    <div class="col-sm-8">
+					    	<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" name="password">	
+					    </div>
+					  </div>
+					  <input type="hidden" name="action" value="app_status">
+					  <button type="submit" class="btn btn-success pull-right" class="pull-right">Check Application Status</button>
+					</form>
+
+			  </div>
+			</div>
+		{/if}
+		{else}
+		<img src="{echo CDN}form/Images/admission_closed.gif">
+		{/else}
+		</div>	
+	</div>
+</div>

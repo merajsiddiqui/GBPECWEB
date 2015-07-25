@@ -1,0 +1,102 @@
+<div class="wrapper row3">
+  <div id="pageintro" class="clear">
+    <div class="fl_left">
+      <h2 class="nospace">Contact Us</h2>
+    </div>
+    <nav class="fl_right breadcrumb">
+      <ul>
+        <li><a href="home" title="Home">Home</a></li>
+        <li><a href="ContactUs" title="Contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</div>
+<div class="wrapper row4">
+  <div role="main" class="container">
+    <section class="clear push80">
+    {if isset($success)}
+    <div class="alert-msg rnd8 success">{echo $success}<a class="close" href="#">&times;</a></div>
+    {/if}
+      <div class="col-3-4 first">
+        <div class="map push50">
+          <div id="map_canvas"></div>
+        </div>
+      </div>
+      <div class="col-1-4">
+        <p class="font-medium bold uppercase nospace push10">Postal address:</p>
+        <address class="block push20">
+        G. B. Pant Engineering College,<br>
+        Govind Puri, Okhla Phase-III,<br>
+        New Delhi, Delhi,<br>
+        PIN Code- 110020
+        </address>
+        <p class="font-medium bold uppercase nospace push10">Email:</p>
+        <ul class="nospace push20">
+        <li>info@gbpec.edu.in</li>
+          <li>support@gbpec.edu.in</li>
+        </ul>
+        <p class="font-medium bold uppercase nospace push10">Admin phone:</p>
+        <ul class="nospace push20">
+          <li>+91-(011)-2638 2314</li>
+          <li>1001000 1101001</li>
+        </ul>
+        <p class="font-medium bold uppercase nospace push10">Fax:</p>
+        <ul class="nospace">
+          <li>+91-(011)-2638 2317</li>
+        </ul>
+      </div>
+    </section>
+    <section class="nospace clear">
+      <h2>Do you have any Query ?</h2>
+      <p>Send us a message. We will get to you at our earliest. You can put a complain or suggest us with your ideas.</p>
+      <div class="block clear">
+        <form id="respond" method="post" action="">
+          <div class="clear">
+            <label class="col-1-3 first push20" for="firstname">Full Name: <span class="required">*</span><br>
+              <input type="text" id="firstname" name="name" value="" size="22" required="true">
+              {echo Shared\Markup::errors($errors, "name")}
+            </label>
+            <label class="col-1-3 push20" for="surname">To Department: <span class="required">*</span><br>
+              <select id="surname" name="department">
+              <option>Academics</option>
+              <option>Library</option>
+              <option>Accounts</option>
+              </select>
+              {echo Shared\Markup::errors($errors, "dept")}
+            </label>
+            <label class="col-1-3 push20" for="ref">Subject:<br>
+              <input type="text" name="subject" id="ref" value="" size="22">
+              {echo Shared\Markup::errors($errors, "subject")}
+            </label>
+            <label class="col-1-3 first push20" for="email">Email: <span class="required">*</span><br>
+              <input type="email" id="email" name="email" value="" size="22" required="true">
+              {echo Shared\Markup::errors($errors, "email")}
+              {if isset($emailw)}
+              <span style="color:red">{echo $emailw}</span>
+              {/if}
+            </label>
+            <label class="col-1-3 push20" for="tel">Contact No.:<br>
+              <input type="tel" id="tel" name="moblie" value="" size="22">
+              {echo Shared\Markup::errors($errors, "mobile")}
+              {if isset($mobilew)}
+              <span style="color:red">{echo $mobilew}</span>
+              {/if}
+            </label>
+            <label class="col-1-3 push20" for="address">Address:<br>
+              <input type="text" id="address" name="address" value="" size="22">
+              {echo Shared\Markup::errors($errors, "address")}
+            </label>
+          </div>
+          <div class="push15">
+            <label for="message">Message <span class="required">*</span></label>
+            <textarea name="message" id="message" cols="25" rows="10"></textarea>
+            {echo Shared\Markup::errors($errors, "message")}
+          </div>
+          <input type="hidden" name="action" value="contact">
+          <input class="button large uppercase red" type="submit" value="Send Message">
+        </form>
+      </div>
+    </section>
+    <div class="clear"></div>
+  </div>
+</div>
