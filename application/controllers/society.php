@@ -25,7 +25,7 @@ class Society extends Controller {
         $this->getLayoutView()->set("seo", framework\Registry::get("seo"));
         
     }
-    public function GBPECIEEE() {
+    public function gbpecieee() {
         $view = $this->getActionView();       
         $this->getLayoutView()->set("seo", framework\Registry::get("seo"));
         
