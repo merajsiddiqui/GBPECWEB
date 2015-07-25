@@ -7,17 +7,17 @@ $routes = array(
         "action" => "index"
     ),
         array(
-        "pattern" => "ContactUs",
+        "pattern" => "contact",
         "controller" => "home",
         "action" => "contact"
     ),
         array(
-        "pattern" =>"Alumni",
+        "pattern" =>"alumni",
         "controller" => "home",
         "action" => "alumni"
     ),
         array(
-        "pattern" => "AboutUs",
+        "pattern" => "about",
         "controller" => "home",
         "action" => "about"
     ),
