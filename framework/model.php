@@ -456,7 +456,7 @@ namespace Framework {
 
             return !sizeof($this->errors);
         }
-        
+
         public function getJsonData() {
             $this->removeProperty($this);
             $var = get_object_vars($this);
@@ -478,6 +478,7 @@ namespace Framework {
             unset($this->_errors);
         }
         
+
     }
 
 }

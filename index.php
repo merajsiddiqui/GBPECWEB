@@ -4,7 +4,7 @@ define("DEBUG", TRUE);
 
 // 1. define the default path for includes
 //define("APP_PATH", dirname(dirname(__FILE__)));
-define("CDN", "http://www.ivdfundservices.com/public/assets/");
+define("CDN", "http://localhost/GBPECWEB/public/assets/");
 define("APP_PATH", str_replace(DIRECTORY_SEPARATOR, "/", dirname(__FILE__)));
 
 try {

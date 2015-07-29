@@ -8,7 +8,7 @@
 
 namespace Shared {
 
-    class Model extends \framework\Model {
+    class Model extends \Framework\Model {
 
         /**
          * @column

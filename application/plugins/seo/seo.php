@@ -6,7 +6,7 @@
  * @author Meraj Ahmad Siddiqui
  */
 
-use framework\StringMethods as StringMethods;
+use Framework\StringMethods as StringMethods;
 
 class SEO {
     

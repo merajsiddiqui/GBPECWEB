@@ -8,11 +8,11 @@
 
 namespace Shared {
 
-    use framework\Events as Events;
-    use framework\Router as Router;
-    use framework\Registry as Registry;
+    use Framework\Events as Events;
+    use Framework\Router as Router;
+    use Framework\Registry as Registry;
 
-    class Controller extends \framework\Controller {
+    class Controller extends \Framework\Controller {
 
         /**
          * @readwrite
@@ -80,7 +80,7 @@ namespace Shared {
             $database->connect();
             
             // schedule: load user from session           
-            Events::add("framework.router.beforehooks.before", function($name, $parameters) {
+            Events::add("Framework.router.beforehooks.before", function($name, $parameters) {
                 $session = Registry::get("session");
                 $controller = Registry::get("controller");
                 $user = $session->get("user");
@@ -90,7 +90,7 @@ namespace Shared {
             });
 
             // schedule: save user to session
-            Events::add("framework.router.afterhooks.after", function($name, $parameters) {
+            Events::add("Framework.router.afterhooks.after", function($name, $parameters) {
                 $session = Registry::get("session");
                 $controller = Registry::get("controller");
                 if ($controller->user) {
@@ -99,7 +99,7 @@ namespace Shared {
             });
 
             // schedule: disconnect from database
-            Events::add("framework.controller.destruct.after", function($name) {
+            Events::add("Framework.controller.destruct.after", function($name) {
                 $database = Registry::get("database");
                 $database->disconnect();
             });

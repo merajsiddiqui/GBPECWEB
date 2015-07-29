@@ -13,21 +13,21 @@ class Events extends Controller {
 
     public function inceptum() {
         $view = $this->getActionView();       
-        $this->getLayoutView()->set("seo", framework\Registry::get("seo"));
+        $this->getLayoutView()->set("seo", Framework\Registry::get("seo"));
     }
     public function Ambrosia() {
         $view = $this->getActionView();       
-        $this->getLayoutView()->set("seo", framework\Registry::get("seo"));
+        $this->getLayoutView()->set("seo", Framework\Registry::get("seo"));
         
     }
     public function Fantasia() {
         $view = $this->getActionView();       
-        $this->getLayoutView()->set("seo", framework\Registry::get("seo"));
+        $this->getLayoutView()->set("seo", Framework\Registry::get("seo"));
         
     }
     public function Fortius() {
         $view = $this->getActionView();       
-        $this->getLayoutView()->set("seo", framework\Registry::get("seo"));
+        $this->getLayoutView()->set("seo", Framework\Registry::get("seo"));
         
     }
     

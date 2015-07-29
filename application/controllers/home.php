@@ -6,14 +6,14 @@
  * @author Meraj Ahmad Siddiqui
  */
 use Shared\Controller as Controller;
-use framework\Registry as Registry;
-use framework\RequestMethods as RequestMethods;
+use Framework\Registry as Registry;
+use Framework\RequestMethods as RequestMethods;
 
 class Home extends Controller {
 
     public function index() {
         $view = $this->getActionView();     
-        $this->getLayoutView()->set("seo", framework\Registry::get("seo"));
+        $this->getLayoutView()->set("seo", Framework\Registry::get("seo"));
         
         $notice = Notice::all(array("for_user =?"=>1, "active = ?"=>1), array("id", "title", "event_date", "content", "for_user"), "id", "desc", 5, 1);
         $view->set("notice", $notice);
@@ -22,7 +22,7 @@ class Home extends Controller {
 
         $view = $this->getActionView();  
              
-        $this->getLayoutView()->set("seo", framework\Registry::get("seo"));
+        $this->getLayoutView()->set("seo", Framework\Registry::get("seo"));
         $view->set("errors", array());
 
 
@@ -58,26 +58,26 @@ class Home extends Controller {
     }
     public function about() {
         $view = $this->getActionView();       
-        $this->getLayoutView()->set("seo", framework\Registry::get("seo"));
+        $this->getLayoutView()->set("seo", Framework\Registry::get("seo"));
     }
     public function privacy() {
         $view = $this->getActionView();       
-        $this->getLayoutView()->set("seo", framework\Registry::get("seo"));
+        $this->getLayoutView()->set("seo", Framework\Registry::get("seo"));
         
     }
     public function sports() {
         $view = $this->getActionView();       
-        $this->getLayoutView()->set("seo", framework\Registry::get("seo"));
+        $this->getLayoutView()->set("seo", Framework\Registry::get("seo"));
         
     }
     public function alumni() {
         $view = $this->getActionView();       
-        $this->getLayoutView()->set("seo", framework\Registry::get("seo"));
+        $this->getLayoutView()->set("seo", Framework\Registry::get("seo"));
         
     }
     public function notice() {
         $view = $this->getActionView();       
-        $this->getLayoutView()->set("seo", framework\Registry::get("seo"));
+        $this->getLayoutView()->set("seo", Framework\Registry::get("seo"));
 
         if(RequestMethods::get("click")=="true"){
             $id = RequestMethods::get("notice_id");

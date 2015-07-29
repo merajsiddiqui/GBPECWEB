@@ -12,4 +12,4 @@ $seo = new SEO(array(
     "photo" => CDN . "images/logo.png"
 ));
 
-framework\Registry::set("seo", $seo);
+Framework\Registry::set("seo", $seo);

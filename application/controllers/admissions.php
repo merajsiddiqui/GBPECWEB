@@ -6,8 +6,8 @@
  * @author Meraj Ahmad Siddiqui
  */
 use Shared\Controller as Controller;
-use framework\Registry as Registry;
-use framework\RequestMethods as RequestMethods;
+use Framework\Registry as Registry;
+use Framework\RequestMethods as RequestMethods;
 
 class Admissions extends Controller {
 

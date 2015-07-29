@@ -1,4 +1,3 @@
-<?php echo  issset(APP_PATH) ? "yes" : "no";?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

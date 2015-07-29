@@ -1,0 +1,13 @@
+Average: , Longest: , Shortest: , Total: 0.212784
+Average: , Longest: , Shortest: , Total: 0.074607
+Average: , Longest: , Shortest: , Total: 0.059434
+Average: , Longest: , Shortest: , Total: 0.051392
+Average: , Longest: , Shortest: , Total: 0.656556
+Average: , Longest: , Shortest: , Total: 0.094119
+Average: , Longest: , Shortest: , Total: 0.06118
+Average: , Longest: , Shortest: , Total: 0.102867
+Average: , Longest: , Shortest: , Total: 0.083823
+Average: , Longest: , Shortest: , Total: 0.040628
+Average: , Longest: , Shortest: , Total: 0.093794
+Average: , Longest: , Shortest: , Total: 0.083719
+Average: , Longest: , Shortest: , Total: 0.043311
